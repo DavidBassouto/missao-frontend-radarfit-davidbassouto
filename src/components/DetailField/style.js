@@ -41,9 +41,11 @@ export const DescriptionField = styled.div`
 `;
 export const CardEditField = styled.div`
   display: flex;
-  align-items: flex-start;
+  width: 95%;
+  padding: 0.2rem;
+  align-items: center;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   button {
     display: flex;
     align-items: center;
@@ -59,7 +61,11 @@ export const CardEditField = styled.div`
     font-weight: lighter;
     transition: 0.2s;
     &:hover {
-      filter: brightness(1.4);
+      background-color: var(--green);
+      
     }
+    &:active {
+      filter: brightness(1.4);
   }
+}
 `;

@@ -12,6 +12,8 @@ export const Container = styled.div`
 export const InsideContainer = styled.div`
   width: 45%;
   height: 30rem;
-  background-color: red;
   gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;

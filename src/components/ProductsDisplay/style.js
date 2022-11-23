@@ -36,6 +36,9 @@ export const DisplayHeader = styled.div`
     color: var(--soft-gray);
     transition: 0.2s;
     &:hover {
+      background-color: var(--green);
+    }
+    &:active{
       filter: brightness(1.4);
     }
   }

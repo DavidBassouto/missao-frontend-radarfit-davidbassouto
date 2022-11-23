@@ -5,6 +5,9 @@ import {
   DescriptionField,
   PriceField,
 } from "./style";
+import { Tag } from "phosphor-react";
+
+
 
 export const DetailField = () => {
   return (
@@ -25,6 +28,7 @@ export const DetailField = () => {
       <LineDivisory />
       <CardEditField>
         <button>Editar</button>
+        <Tag size={35} color="#222d35" weight="fill" />
       </CardEditField>
     </Container>
   );

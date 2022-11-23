@@ -10,12 +10,14 @@ export const Container = styled.div`
   justify-content: space-evenly;
   padding: 0.5rem;
   gap: 1rem;
+ 
   &:hover {
     cursor: pointer;
-    filter: brightness(0.95);
+    filter: brightness(0.98);
   }
   &:active {
     svg {
+      transition: 0.2s;
       fill: var(--green);
     }
   }

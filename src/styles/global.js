@@ -29,6 +29,9 @@ export default createGlobalStyle`
     h1 , h2 ,h3 ,h4{
         font-weight: bolder;
     }
+    h2 ,h3 ,h4{
+        font-size: 1rem;
+    }
     
     button{
         cursor: pointer;
