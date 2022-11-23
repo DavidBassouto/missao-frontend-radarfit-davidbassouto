@@ -1,3 +1,10 @@
+import { ProductDisplay } from "../../components/ProductsDisplay";
+import { Container } from "./styles";
+
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Container>
+      <ProductDisplay />
+    </Container>
+  );
 };
