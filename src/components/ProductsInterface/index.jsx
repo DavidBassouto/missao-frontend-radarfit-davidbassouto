@@ -1,11 +1,17 @@
+import { DetailField } from "../DetailField";
 import { Container, InsideContainer } from "./style";
 
 export const ProductInterface = () => {
   return (
     <>
       <Container>
-        <InsideContainer></InsideContainer>
-        <InsideContainer></InsideContainer>
+        <InsideContainer>
+          <h2>Lista de Produtos</h2>
+        </InsideContainer>
+        <InsideContainer>
+          <h2>Detalhes</h2>
+          <DetailField />
+        </InsideContainer>
       </Container>
     </>
   );
