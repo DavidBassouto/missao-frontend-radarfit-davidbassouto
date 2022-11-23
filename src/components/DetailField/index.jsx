@@ -1,5 +1,10 @@
 import { LineDivisory } from "../ProductsDisplay/style";
-import { Container, DescriptionField, PriceField } from "./style";
+import {
+  CardEditField,
+  Container,
+  DescriptionField,
+  PriceField,
+} from "./style";
 
 export const DetailField = () => {
   return (
@@ -18,7 +23,9 @@ export const DetailField = () => {
         </p>
       </DescriptionField>
       <LineDivisory />
-      <div>Card com button</div>
+      <CardEditField>
+        <button>Editar</button>
+      </CardEditField>
     </Container>
   );
 };
