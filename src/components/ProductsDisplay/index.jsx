@@ -5,12 +5,8 @@ export const ProductDisplay = () => {
   return (
     <Container>
       <DisplayHeader>
-        <div className="product">
-          <h1>Produtos</h1>
-        </div>
-        <div class="button">
-          <button>+</button>
-        </div>
+        <h1>Produtos</h1>
+        <button>+</button>
       </DisplayHeader>
       <LineDivisory />
       <ProductInterface />
