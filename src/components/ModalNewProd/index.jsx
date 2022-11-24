@@ -70,7 +70,7 @@ export const ModalNewProd = ({ setModalNewProd }) => {
           </form>
         </ModalOptions>
         <ButtonStyled form="form" type="submit">
-          Enviar
+          Add
         </ButtonStyled>
       </ModalContainer>
     </BackgroundModal>
