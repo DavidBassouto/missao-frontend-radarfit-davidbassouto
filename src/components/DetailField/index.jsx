@@ -8,11 +8,13 @@ import {
 import { Trash } from "phosphor-react";
 import { useState } from "react";
 import { ModalDeleteProd } from "../ModalDeleteProd";
+import { ModalEditProd } from "../ModalEditProd";
 
 export const DetailField = ({ productById }) => {
   const [modalDelete, setModalDelete] = useState(false);
-  const [modelEdit, setModalEdit] = useState(false);
-
+  const [modelEditProd, setModalEditProd] = useState(false);
+   
+  
   return (
     <>
       <Container>
@@ -26,7 +28,7 @@ export const DetailField = ({ productById }) => {
         </DescriptionField>
         <LineDivisory />
         <CardEditField>
-          <button>Editar</button>
+          <button onClick={() => setModalEditProd(true)}>Editar</button>
           <Trash
             size={35}
             color="#222d35"
@@ -36,7 +38,18 @@ export const DetailField = ({ productById }) => {
           />
         </CardEditField>
       </Container>
-      {modalDelete && <ModalDeleteProd setModalDelete={setModalDelete} productId={productById.id}/>}
+      {modalDelete && (
+        <ModalDeleteProd
+          setModalDelete={setModalDelete}
+          productId={productById.id}
+        />
+      )}
+      {modelEditProd && (
+        <ModalEditProd
+          setModalEditProd={setModalEditProd}
+          productId={productById.id}
+        />
+      )}
     </>
   );
 };
