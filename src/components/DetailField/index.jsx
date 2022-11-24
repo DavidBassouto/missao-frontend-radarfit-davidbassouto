@@ -5,9 +5,13 @@ import {
   DescriptionField,
   PriceField,
 } from "./style";
-import { Tag } from "phosphor-react";
+import { Trash } from "phosphor-react";
+import { useState } from "react";
 
 export const DetailField = ({ productById }) => {
+  const [modelDelete, setModalDelete] = useState(false);
+  const [modelEdit, setModalEdit] = useState(false);
+
   return (
     <Container>
       <h3>{productById.produto}</h3>
@@ -21,7 +25,13 @@ export const DetailField = ({ productById }) => {
       <LineDivisory />
       <CardEditField>
         <button>Editar</button>
-        <Tag size={35} color="#222d35" weight="fill" />
+        <Trash
+          size={35}
+          color="#222d35"
+          weight="fill"
+          cursor={"pointer"}
+          onClick={() => setModalDelete(true)}
+        />
       </CardEditField>
     </Container>
   );

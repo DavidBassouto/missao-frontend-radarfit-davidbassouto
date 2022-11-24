@@ -33,4 +33,6 @@ export const RigthtSide = styled.div`
       color: var(--gray);
     }
   }
+
+  
 `;
