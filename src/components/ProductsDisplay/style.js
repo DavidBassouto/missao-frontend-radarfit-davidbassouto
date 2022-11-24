@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.5rem;
 `;
 
 export const DisplayHeader = styled.div`
@@ -21,11 +21,12 @@ export const DisplayHeader = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: start;
+    font-size: 1.5rem;
   }
   button {
     display: flex;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;

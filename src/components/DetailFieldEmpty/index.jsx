@@ -4,23 +4,23 @@ import {
   Container,
   DescriptionField,
   PriceField,
-} from "./style";
+} from "../DetailField/style";
 import { Tag } from "phosphor-react";
 
-export const DetailField = ({ productById }) => {
+export const DetailFieldEmpty = () => {
   return (
     <Container>
-      <h3>{productById.produto}</h3>
+      <h3>Selecione um produto</h3>
       <PriceField>
         <h4>Valor</h4>
-        <p>{`R$ ${productById.valor.toFixed(2)}`}</p>
+        <p>--</p>
       </PriceField>
       <DescriptionField>
-        <p>{productById.descricao}</p>
+        <p>Selecione um produto para obter mais detalhes</p>
       </DescriptionField>
       <LineDivisory />
       <CardEditField>
-        <button>Editar</button>
+        <button disabled={true} >Editar</button>
         <Tag size={35} color="#222d35" weight="fill" />
       </CardEditField>
     </Container>

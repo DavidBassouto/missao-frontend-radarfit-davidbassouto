@@ -13,6 +13,8 @@ export const Container = styled.div`
   gap: 0.5rem;
   h3 {
     color: var(--green);
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -21,6 +23,8 @@ export const PriceField = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 0.5rem;
+  gap: 0.5rem;
   p {
     font-weight: bold;
     color: var(--gray);
@@ -62,10 +66,9 @@ export const CardEditField = styled.div`
     transition: 0.2s;
     &:hover {
       background-color: var(--green);
-      
     }
     &:active {
       filter: brightness(1.4);
+    }
   }
-}
 `;

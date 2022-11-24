@@ -1,7 +1,7 @@
 import { ProductInterface } from "../ProductsInterface";
 import { Container, DisplayHeader, LineDivisory } from "./style";
 
-export const ProductDisplay = () => {
+export const ProductDisplay = ({ productsInfo, filteredProducts}) => {
   return (
     <Container>
       <DisplayHeader>
@@ -9,7 +9,7 @@ export const ProductDisplay = () => {
         <button>+</button>
       </DisplayHeader>
       <LineDivisory />
-      <ProductInterface />
+      <ProductInterface productsInfo={productsInfo} filteredProducts={filteredProducts} />
     </Container>
   );
 };
